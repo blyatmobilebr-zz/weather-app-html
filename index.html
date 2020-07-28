@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+  <!--<![endif]-->
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title></title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="../images/owfont-master/css/owfont-regular.css" />
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body class="bg-primary">
+    <!--[if lt IE 7]>
+      <p class="browsehappy">
+        You are using an <strong>outdated</strong> browser. Please
+        <a href="#">upgrade your browser</a> to improve your experience.
+      </p>
+    <![endif]-->
+
+    <!-- Container for the weather app -->
+    <div class="container">
+      <div class="card">
+        <div class="card-body bg-dark">
+          <h1 class="card-title text-center text-white display-4">Weather</h1>
+          <div class="form-group text-white">
+            <label class="lead">City:</label>
+            <input type="text" class="form-control" placeholder="Enter the name..." id="city" />
+            <button
+              class="btn btn-danger my-4 d-block mx-auto"
+              data-toggle="collapse"
+              data-target="#weatherData"
+              type="button"
+              id="button"
+            >
+              See Temperature
+            </button>
+          </div>
+          <div class="card collapse bg-dark" id="weatherData">
+            <div class="card-body text-white">
+              <img src="" class="d-block mx-auto img-fluid rounded" alt="" id="image" />
+              <p class="lead card-text text-center my-3" id="temperature">10°C</p>
+              <p class="lead card-text text-center" id="description">Clear sky</p>
+              <p class="lead card-text text-center" id="location">London, GB</p>
+              <p class="lead card-footer text-center" id="attributeNote">
+                Icons made by
+                <a href="https://www.flaticon.com/authors/smashicons" title="Smashicons"
+                  >Smashicons</a
+                >
+                from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bootstrap js file -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"
+      async
+      defer
+    ></script>
+
+    <!-- Axios CDN-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.2/axios.js"></script>
+
+    <!-- Main js file -->
+    <script src="index.js"></script>
+  </body>
+</html>
